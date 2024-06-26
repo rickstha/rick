@@ -2,55 +2,289 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="This website contains some stupid idiotic and wanna be funny daily life vloging and some photos and some tutorials from Rikesh Shrestha">
-  <meta name="keywords" content="Vloging, Rikesh Shrestha, Rikesh, Rick Shrestha, Rick, Kathmandu, Nepal, Thankot, mindfreak">
-  <meta name="author" content="Rikesh Shrestha">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I am Rick</title>
-    <link rel="icon" type="image/x-icon" href="logo.jpg">
-    <style>
-         html, body { padding: 0; margin: 0; width: 100%; height: 100%; }
-  * {box-sizing: border-box;}
-  body { text-align: center; padding: 0; background: #1289A7; color: #fff; font-family: Open Sans; }
-  h1 { font-size: 2rem; font-weight: 100; text-align: center;}
-
-  article { display: block;  padding: 50px; margin: 0 auto; }
-  a { color: #fff; }
-  a:hover { text-decoration: none; }
-  svg { width: 75px; margin-top: 1em; }
-  .video{
-  
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-   
-    
-
-  }
-  .video video{
-    height: 400PX;
-    width: 400PX;
-    text-align: center;
-    margin-bottom: 20px;
-
-  }
-    </style>
+    <title>Rick-Music</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <article>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 202.24 202.24"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Asset 3</title><g id="Layer_2" data-name="Layer 2"><g id="Capa_1" data-name="Capa 1"><path class="cls-1" d="M101.12,0A101.12,101.12,0,1,0,202.24,101.12,101.12,101.12,0,0,0,101.12,0ZM159,148.76H43.28a11.57,11.57,0,0,1-10-17.34L91.09,31.16a11.57,11.57,0,0,1,20.06,0L169,131.43a11.57,11.57,0,0,1-10,17.34Z"/><path class="cls-1" d="M101.12,36.93h0L43.27,137.21H159L101.13,36.94Zm0,88.7a7.71,7.71,0,1,1,7.71-7.71A7.71,7.71,0,0,1,101.12,125.63Zm7.71-50.13a7.56,7.56,0,0,1-.11,1.3l-3.8,22.49a3.86,3.86,0,0,1-7.61,0l-3.8-22.49a8,8,0,0,1-.11-1.3,7.71,7.71,0,1,1,15.43,0Z"/></g></g></svg>
-        <h1>I&rsquo;ll be back soon! Website bandai xa guys June 7 ma new design auxa.......</h1>
-        <div>
-            <p>Sorry for the inconvenience. We&rsquo;re performing some maintenance at the moment. If you need to you can always follow us on <a href="https://www.facebook.com/rick.stha">Facebook/Rick Shrestha</a> for updates, otherwise we&rsquo;ll be back up shortly!</p>
-            <p>&mdash; The Rick Shrestha Team</p>
-            <P>Untill then enjoy this cover &#128540;</P>
+<!-- header -->
+ <header>
+    <!-- menu side -->
+    <div class="menu-side">
+        <h1>RickStream</h1>
+        <div class="playlist">
+            <h4 class="active"><span></span><i class="bi bi-music-note"></i>Playlist</h4>
+            <h4><span></span><i class="bi bi-music-note"></i>Last Listning</h4>
+            <h4><span></span><i class="bi bi-music-note"></i>Recommended</h4>
+         </div>
+         <div class="menu-song">
+            <li class="songItem">
+                <span>01</span>
+                <img src="img/lover.png" alt="">
+                <h5>Lover<br> <div class="subtitle">Taylor Swift</div></h5>
+                <i class="bi bi-play-circle-fill playListPlay" id="1"></i>
+            </li>
+            <li class="songItem">
+                <span>02</span>
+                <img src="img/lover.png" alt="">
+                <h5>Lover<br> <div class="subtitle">Taylor Swift</div></h5>
+                <i class="bi bi-play-circle-fill playListPlay" id="2"></i>
+            </li>
+            <li class="songItem">
+                <span>03</span>
+                <img src="img/lover.png" alt="">
+                <h5>Lover<br> <div class="subtitle">Taylor Swift</div></h5>
+                <i class="bi bi-play-circle-fill playListPlay" id="3"></i>
+            </li>
+            <li class="songItem">
+                <span>04</span>
+                <img src="img/lover.png" alt="">
+                <h5>Lover<br> <div class="subtitle">Taylor Swift</div></h5>
+                <i class="bi bi-play-circle-fill playListPlay" id="4"></i>
+            </li>
+            <li class="songItem">
+                <span>05</span>
+                <img src="img/lover.png" alt="">
+                <h5>Lover<br> <div class="subtitle">Taylor Swift</div></h5>
+                <i class="bi bi-play-circle-fill playListPlay" id="5"></i>
+            </li>
+            <li class="songItem">
+                <span>06</span>
+                <img src="img/lover.png" alt="">
+                <h5>Lover<br> <div class="subtitle">Taylor Swift</div></h5>
+                <i class="bi bi-play-circle-fill playListPlay" id="6"></i>
+            </li>
+            <li class="songItem">
+                <span>07</span>
+                <img src="img/lover.png" alt="">
+                <h5>Lover<br> <div class="subtitle">Taylor Swift</div></h5>
+                <i class="bi bi-play-circle-fill playListPlay" id="7"></i>
+            </li>
+           
+         </div>
+
+    </div>
+
+ <!-- song side -->
+    <div class="song-side">
+        <nav>
+            <ul>
+                <li>Discover <span></span></li>
+                <li>Chat GPT</li>
+                <li>Videos</li>
+            </ul>
+            <div class="search">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="Search music...">
+            </div>
+
+          
+        </nav>
+        <div class="content">
+            <h1>Taylor Swift-Lover</h1>
+            <p>We could leave the Christmas lights up 'til January
+                And this is our place, we make <br>the rules 
+                And there's a dazzling haze, a mysterious way about you dear
+                Have  <br>I knownyou 20 seconds or 20 years? 
+                
+            </p>
+            <div class="buttons">
+                <button>PLAY</button>
+                <button>FOLLOW</button>
+            </div>
+        </div>
+        <div class="popular-song">
+            <div class="h4">
+                <h4>Popular Song</h4>
+                <div class="button_s">
+                    <i class="bi bi-arrow-left-short" id="pop_song_left"></i>
+                    <i class="bi bi-arrow-right-short" id="pop_song_right"></i>
+                </div>
+            </div>
             
+            <div class="pop-song" >
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="img/lover.png" alt="">
+                        <i class="bi bi-play-circle-fill playListPlay" id="8"></i>
+                    </div>
+                    <h5>Lover<br> <div class="subtitle">Taylor Swift</div></h5>     
+                </li>
+
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="img/lover.png" alt="">
+                        <i class="bi bi-play-circle-fill playListPlay" id="9"></i>
+                    </div>
+                    <h5>Lover<br> <div class="subtitle">Taylor Swift</div></h5>     
+                </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="img/lover.png" alt="">
+                        <i class="bi bi-play-circle-fill playListPlay" id="10"></i>
+                    </div>
+                    <h5>Lover<br> <div class="subtitle">Taylor Swift</div></h5>     
+                </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="img/lover.png" alt="">
+                        <i class="bi bi-play-circle-fill playListPlay" id="11"></i>
+                    </div>
+                    <h5>Lover<br> <div class="subtitle">Taylor Swift</div></h5>     
+                </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="img/lover.png" alt="">
+                        <i class="bi bi-play-circle-fill playListPlay" id="12"></i>
+                    </div>
+                    <h5>Lover<br> <div class="subtitle">Taylor Swift</div></h5>     
+                </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="img/lover.png" alt="">
+                        <i class="bi bi-play-circle-fill playListPlay" id="13"></i>
+                    </div>
+                    <h5>Lover<br> <div class="subtitle">Taylor Swift</div></h5>     
+                </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="img/lover.png" alt="">
+                        <i class="bi bi-play-circle-fill playListPlay" id="14"></i>
+                    </div>
+                    <h5>Lover<br> <div class="subtitle">Taylor Swift</div></h5>     
+                </li>
+
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="img/lover.png" alt="">
+                        <i class="bi bi-play-circle-fill playListPlay" id="15"></i>
+                    </div>
+                    <h5>Lover<br> <div class="subtitle">Taylor Swift</div></h5>     
+                </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="img/lover.png" alt="">
+                        <i class="bi bi-play-circle-fill playListPlay" id="16"></i>
+                    </div>
+                    <h5>Lover<br> <div class="subtitle">Taylor Swift</div></h5>     
+                </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="img/lover.png" alt="">
+                        <i class="bi bi-play-circle-fill playListPlay" id="17"></i>
+                    </div>
+                    <h5>Lover<br> <div class="subtitle">Taylor Swift</div></h5>     
+                </li>
+
+
+            </div>
+
+        </div>
+
+        <div class="popular_artist">
+
+            <div class="h4">
+                <h4>Popular Artist</h4>
+                <div class="button_s">
+                    <i class="bi bi-arrow-left-short" id="pop_art_left"></i>
+                    <i class="bi bi-arrow-right-short" id="pop_art_right"></i>
+                </div>
+            </div>
+
+            <div class="item">
+                <li>
+                    <img src="img/10.jpg" alt="ed">
+                </li>
+                
+                <li>
+                    <img src="img/10.jpg" alt="ed">
+                </li>
+                
+                <li>
+                    <img src="img/10.jpg" alt="ed">
+                </li>
+                
+                <li>
+                    <img src="img/10.jpg" alt="ed">
+                </li>
+                
+                <li>
+                    <img src="img/10.jpg" alt="ed">
+                </li>
+                
+                <li>
+                    <img src="img/10.jpg" alt="ed">
+                </li>
+                
+                <li>
+                    <img src="img/10.jpg" alt="ed">
+                </li>
+                
+                <li>
+                    <img src="img/10.jpg" alt="ed">
+                </li>
+                
+                <li>
+                    <img src="img/10.jpg" alt="ed">
+                </li>
+                
+                <li>
+                    <img src="img/10.jpg" alt="ed">
+                </li>
+                
+                <li>
+                    <img src="img/10.jpg" alt="ed">
+                </li>
+                
+
+
+               
+
+            </div>
+
+        </div>
+
+    </div>
+ <!--master play -->
+    <div class="master-play">
+        <div class="wave" id="wave">
+            <div class="wave1"></div>
+            <div class="wave1"></div>
+            <div class="wave1"></div>
+        </div>
+        <img id="poster-play" src="img/1.jpg" alt="">
+        <h4 id="title">
+            Lover  <div class="subtitle">Taylor Swift</div>
+        </h4>
+        <div class="icons">
+            <i class="bi bi-music-note shuffle"></i>
+            <i class="bi bi-skip-start-fill" id="back"></i>
+            <i class="bi bi-play-fill" id="masterPlay"></i>
+            <i class="bi bi-skip-end-fill" id="next"></i>
+            <a href=""><i class="bi bi-cloud-download" id="download-music"></i></a>
             
         </div>
-    </article>
-    <div class="video">
-        <video src="\rick.mp4" controls></video>
-        
+        <span id="currentStart">0:00</span>
+        <div class="bar">
+            <input type="range" id="seek" min="0" max="100">
+            <div class="bar2" id="bar2"></div>
+            <!-- <div class="dot"></div> -->
+        </div>
+        <span id="currentEnd">0:30</span>
+        <div class="vol">
+            <i class="bi bi-volume-up-fill" id="vol_icon"></i>
+            <input type="range" id="vol" min="0" max="100">
+            
+            <div class="vol-bar" ></div>
+            <div class="dot2" id="vol_dot"></div>
+        </div>
     </div>
+
+ </header>
+ 
+ <!-- header end -->
+ <script src="app.js"></script>
 </body>
 </html>
