@@ -4,89 +4,34 @@ const songs = [
     {
         id:1,
         songName: `Lover<br> <div class="subtitle">Taylor Swift</div>`,
-        poster:"img/1.jpg"
+        poster:"img/taylor/1.jpg"
     },
     {
         id:2,
         songName: `Style<br> <div class="subtitle">Taylor Swift</div>`,
-        poster:"img/2.jpg"
+        poster:"img/taylor/2.jpg"
     },
     {
         id:3,
-        songName: `I see fire<br> <div class="subtitle">Ed Sheeran</div>`,
-        poster:"img/3.jpg"
+        songName: `Lover<br> <div class="subtitle">Taylor Swift</div>`,
+        poster:"img/taylor/3.jpg"
     },
     {
         id:4,
-        songName: `Thinking out loud<br> <div class="subtitle">Ed Sheeran</div>`,
-        poster:"img/4.jpg"
+        songName: `Style<br> <div class="subtitle">Taylor Swift</div>`,
+        poster:"img/taylor/4.jpg"
     },
     {
         id:5,
-        songName: `21 Guns<br> <div class="subtitle">Greenday</div>`,
-        poster:"img/5.jpg"
+        songName: `Lover<br> <div class="subtitle">Taylor Swift</div>`,
+        poster:"img/taylor/5.jpg"
     },
     {
         id:6,
-        songName: `I Miss You<br> <div class="subtitle">Blink 182</div>`,
-        poster:"img/6.jpg"
+        songName: `Style<br> <div class="subtitle">Taylor Swift</div>`,
+        poster:"img/taylor/6.jpg"
     },
-    {
-        id:7,
-        songName: `Affaction<br> <div class="subtitle">Ciggerate after sex</div>`,
-        poster:"img/7.jpg"
-    },
-    {
-        id:8,
-        songName: `Hands Held High<br> <div class="subtitle">Linkin Park</div>`,
-        poster:"img/8.jpg"
-    },
-    {
-        id:9,
-        songName: `Numb<br> <div class="subtitle">Linkin Park</div>`,
-        poster:"img/9.jpg"
-    },
-    {
-        id:10,
-        songName: `Signs of time<br> <div class="subtitle">Harry Styles</div>`,
-        poster:"img/10.jpg"
-    },
-    {
-        id:11,
-        songName: `Iris<br> <div class="subtitle">Goo Goo Dolls</div>`,
-        poster:"img/11.jpg"
-    },
-    {
-        id:12,
-        songName: `Lover<br> <div class="subtitle">Taylor Swift</div>`,
-        poster:"img/12.jpg"
-    },
-    {
-        id:13,
-        songName: `Melting<br> <div class="subtitle">Kali Uchis</div>`,
-        poster:"img/13.jpg"
-    },
-    {
-        id:14,
-        songName: `Naganya Maya<br> <div class="subtitle">Sajjan Raj Vaidhya</div>`,
-        poster:"img/14.jpg"
-    },
-    {
-        id:15,
-        songName: `The Scientist<br> <div class="subtitle">Coldplay</div>`,
-        poster:"img/15.jpg"
-    },
-    {
-        id:16,
-        songName: `Somewhere Only We Know<br> <div class="subtitle">Kaene</div>`,
-        poster:"img/16.jpg"
-    },
-    {
-        id:17,
-        songName: `Teenage Dream cover<br> <div class="subtitle">Stephen Dawes</div>`,
-        poster:"img/17.jpg"
-    }
-
+    
     
 ]
 
@@ -99,46 +44,6 @@ const music = new Audio('audio/1.m4a')
 Array.from(document.getElementsByClassName('songItem')).forEach((e,i) => {
     e.getElementsByTagName('img')[0].src=songs[i].poster
     e.getElementsByTagName('h5')[0].innerHTML=songs[i].songName
-})
-
-// for search
-
-let search_result = document.getElementsByClassName('search_result')[0];
-songs.forEach(element => {
-    const{id, songName, poster} =element;
-    let card = document.createElement('a');
-    card.classList.add('card')
-    card.href ="#" + id;
-    card.innerHTML = `<img src="${poster}" alt="img">
-                        <div class="contents">
-                            ${songName}
-                        </div>`;
-                        
-    search_result.appendChild(card);
-
-});
-
-let input = document.getElementsByTagName('input')[0];
-input.addEventListener('keyup',()=>{
-    let input_value =input.value.toUpperCase();
-    let itemss = search_result.getElementsByTagName('a');
-    for (let index = 0; index < itemss.length; index++) {
-        let as = itemss[index].getElementsByClassName('contents')[0];
-        let text_value = as.textContent || as.innerHTML;
-        if (text_value.toUpperCase().indexOf(input_value)>-1) {
-            itemss[index].style.display = "flex";
-        }
-        else{
-            itemss[index].style.display = "none";
-        }
-        if (input.value==0) {
-            search_result.style.display='none'
-        }
-        else{
-            search_result.style.display=''
-
-        }
-    }
 })
 
 // for music 
@@ -182,13 +87,13 @@ let download_music = document.getElementById('download-music');
 Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
     e.addEventListener('click',(el)=>{
         index = el.target.id;
-        music.src = `audio/${index}.m4a`;
-        poster.src = `img/${index}.jpg`;
+        music.src = `audio/taylor/${index}.m4a`;
+        poster.src = `img/taylor/${index}.jpg`;
         masterPlay.classList.add('bi-pause-fill')
         masterPlay.classList.remove('bi-play-fill')
         music.play();
 
-        download_music.href = `audio/${index}.m4a`
+        download_music.href = `audio/taylor/${index}.m4a`
 
         let songTitles = songs.filter((els)=>{
             return els.id ==index;
@@ -293,8 +198,8 @@ back.addEventListener('click',()=>{
         index = Array.from(document.getElementsByClassName('songItem')).length;
     }
    
-    music.src = `audio/${index}.m4a`;
-    poster.src = `img/${index}.jpg`;
+    music.src = `audio/taylor/${index}.m4a`;
+    poster.src = `img/taylor/${index}.jpg`;
     masterPlay.classList.add('bi-pause-fill')
     masterPlay.classList.remove('bi-play-fill')
     music.play();
@@ -323,8 +228,8 @@ next.addEventListener('click',()=>{
        index=1;
     }
    
-    music.src = `audio/${index}.m4a`;
-    poster.src = `img/${index}.jpg`;
+    music.src = `audio/taylor/${index}.m4a`;
+    poster.src = `img/taylor/${index}.jpg`;
     masterPlay.classList.add('bi-pause-fill')
     masterPlay.classList.remove('bi-play-fill')
     music.play();
@@ -422,13 +327,13 @@ const next_music = () =>{
         index++
     }
 
-    music.src = `audio/${index}.m4a`;
-    poster.src = `img/${index}.jpg`;
+    music.src = `audio/taylor/${index}.m4a`;
+    poster.src = `img/taylor/${index}.jpg`;
     masterPlay.classList.add('bi-pause-fill')
     masterPlay.classList.remove('bi-play-fill')
     music.play();
 
-    download_music.href = `audio/${index}.m4a`
+    download_music.href = `audio/taylor/${index}.m4a`
 
     let songTitles = songs.filter((els)=>{
         return els.id ==index;
@@ -452,13 +357,13 @@ const repeat_music = () =>{
     // index ++
   index;
 
-    music.src = `audio/${index}.m4a`;
-    poster.src = `img/${index}.jpg`;
+    music.src = `audio/taylor/${index}.m4a`;
+    poster.src = `img/taylor/${index}.jpg`;
     masterPlay.classList.add('bi-pause-fill')
     masterPlay.classList.remove('bi-play-fill')
     music.play();
 
-    download_music.href = `audio/${index}.m4a`
+    download_music.href = `audio/taylor/${index}.m4a`
 
     let songTitles = songs.filter((els)=>{
         return els.id ==index;
@@ -487,13 +392,13 @@ const random_music = () =>{
         index=Math.floor((Math.random()*songs.length)+1)
     }
 
-    music.src = `audio/${index}.m4a`;
-    poster.src = `img/${index}.jpg`;
+    music.src = `audio/taylor/${index}.m4a`;
+    poster.src = `img/taylor/${index}.jpg`;
     masterPlay.classList.add('bi-pause-fill')
     masterPlay.classList.remove('bi-play-fill')
     music.play();
 
-    download_music.href = `audio/${index}.m4a`
+    download_music.href = `audio/taylor/${index}.m4a`
 
     let songTitles = songs.filter((els)=>{
         return els.id ==index;
