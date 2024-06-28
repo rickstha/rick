@@ -208,8 +208,13 @@ header .song-side{
 
     }
     @media screen and (max-width:400px){
+
+        header .song-side nav ul li {
+            font-size: 9px;
+            margin-right: 8px;
+        }
         header .song-side nav .search{
-            width: 150px;
+            width: 130px;
             display: flex;
             
         }
@@ -227,6 +232,14 @@ header .song-side{
 
         header .menu-side{
          width: 65%;
+        }
+        header .master-play{
+            z-index: 99999999999999999;
+        }
+
+        header .song-side .content p {
+            font-size: 10px;
+            
         }
 
     }
