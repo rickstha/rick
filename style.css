@@ -31,6 +31,7 @@ header{
     background-color: #111727;
     box-shadow: 5px 0px 2px #090f1f;
 }
+/* scroll */
 header .menu-side h6{
    display: none;
    transform: translateX(-100%);
