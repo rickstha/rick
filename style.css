@@ -24,23 +24,10 @@ header{
     display: flex;
     flex-wrap: wrap;
 }
-a:visited{
-   color: #fff;
-   }
-   header .menu-side h6{
-      display: none;
-      transform: translateX(-100%);
-   }
-   .menu-side{
-      transform: translateX(0) !important;
-   }
-   
-
 
 .menu-side, .song-side{
     width: 25%;
     height: 90%;
-  
     background-color: #111727;
     box-shadow: 5px 0px 2px #090f1f;
 }

@@ -1,0 +1,11 @@
+a:visited{
+    color: #fff;
+    }
+    header .menu-side h6{
+       display: none;
+       transform: translateX(-100%);
+    }
+    .menu-side{
+       transform: translateX(0) !important;
+    }
+    
