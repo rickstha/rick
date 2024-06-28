@@ -24,6 +24,9 @@ header{
     display: flex;
     flex-wrap: wrap;
 }
+a:visited{
+color: #fff;
+}
 .menu-side, .song-side{
     width: 25%;
     height: 90%;
