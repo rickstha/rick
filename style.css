@@ -31,6 +31,10 @@ header{
     background-color: #111727;
     box-shadow: 5px 0px 2px #090f1f;
 }
+header .menu-side h6{
+   display: none;
+   transform: translateX(-100%);
+}
 .song-side{
     width: 75%;
     background-color: #0b1320;
@@ -44,7 +48,9 @@ header{
    
      box-shadow: 0px 3px 8px #090f1f;
 }
-
+.menu-side{
+   transform: translateX(0) !important;
+}
 .menu-side h1{
     font-size: 25px;
     margin: 15px 0 0 20px;
@@ -226,6 +232,7 @@ color: #4c5262;
         white-space: nowrap;
         font-size: 13px;
         line-height: 17px;
+        z-index: 99999999;
      }
      .master-play h4 .subtitle{
         font-size: 11px;
@@ -292,6 +299,7 @@ color: #4c5262;
      }
      .master-play #currentStart{
       margin: 0 0 0 20px;
+      z-index: 99999999999;
      }
 
      .master-play .bar{
@@ -300,6 +308,7 @@ color: #4c5262;
         height: 2px;
         background-color: rgb(105, 105, 170, .1);
         margin: 0px 15px 0px 10px;
+        z-index: 999999999;
      }
      .master-play .bar2{
         position: absolute;
@@ -741,3 +750,4 @@ header .song-side .popular-song .pop-song li:hover .img_play .bi{
            
                    }
                       
+

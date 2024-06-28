@@ -1,0 +1,232 @@
+@media screen and (max-width:1200px){
+header{
+    width: 95%;
+}
+header .menu-side {
+    width: 30%;
+}
+header .song-side{
+    width: 70%;
+}
+/* header .song-side .content{
+    height: 18%;
+} */
+}
+
+@media screen and (max-width:930px){
+  
+    header .menu-side {
+        width: 40%;
+        position: absolute;
+        transition: .5s linear;
+        z-index: 99999;
+        transform: translateX(-100%) !important;
+    }
+    header .menu-side-active {
+       
+        
+    }
+    header .song-side{
+        width: 100%;
+    }
+    header .master-play{
+        position: absolute;
+        bottom: 0;
+    }
+    .master-play .icons{
+        font-size: 14px;
+        margin: 0px -4px 0px 7px;
+        width: 31%;
+     }
+
+     header .menu-side h6{
+        position: absolute;
+        right: -40px;
+        bottom: 10px;
+        width: 40px;
+        height: 40px;
+        background: #111727;
+        transform: translateX(0);
+        border-radius: 0px 10px 10px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        cursor: pointer;
+        transition: .5s linear;
+     }
+    /* header .song-side .content{
+        height: 18%;
+    } */
+    }
+
+    @media screen and (max-width:800px){
+        header{
+            width: 100%;
+            height: 100vh;
+        }
+        header .song-side nav ul li{
+            font-size: 11px;
+            margin-right: 10px;
+        }
+        
+       
+        .master-play{
+            padding: 0 15px;
+        }
+        header .master-play .icons{
+           font-size: 14px;
+           margin: 0px -4px 0px 7px;
+
+        }
+        header .master-play .icons .shuffle{
+            font-size: 16px;
+            width: 15px;
+            
+        }
+        .master-play .icons #download-music {
+            font-size: 16px;
+            margin-left: 5px;
+        }
+       
+
+   
+        .master-play #currentStart {
+            margin: 0;
+        }
+        .master-play .bar{
+            width: 20%;
+        }
+        .master-play .vol .bi {
+           
+            font-size: 21px;
+            top: -15px;
+            z-index: 9999999999999;
+           
+        }
+        .master-play .vol {
+           
+            width: 45px;
+            z-index: 99999999999;
+          
+        }
+        .master-play span{
+            z-index: 999999999999;
+        }
+    }
+
+
+
+
+    @media screen and (max-width:577px){
+        header{
+            width: 100%;
+            height: 100vh;
+        }
+        header .song-side nav ul li{
+            font-size: 11px;
+            margin-right: 10px;
+        }
+        header .song-side nav .search{
+            width: auto;
+        }
+        header .menu-side{
+            width: 60%;
+        }
+        .master-play{
+            padding: 0 17px;
+        }
+        header .master-play .icons{
+            position: absolute;
+            top: -29px;
+            right: 30%;
+            z-index: 999999;
+           font-size: 17px;
+
+        }
+        header .master-play .icons .shuffle{
+            font-size: 16px;
+            width: 15px;
+            
+        }
+        .master-play .icons #download-music {
+            font-size: 16px;
+            margin-left: 5px;
+        }
+        header .master-play .icons::before{
+            content: '';
+            position: absolute;
+            width: 204px;
+            height: 180px;
+            background: #111727;
+           z-index: -1;
+           border-radius: 50% 50% 0 0;
+           left: -20%;
+           top: -41px;
+           box-shadow: 0px -11px 20px -17px #000;
+            
+        }
+
+        header .master-play .wave{
+            position: absolute;
+            top: -78px;
+            right: 40%;
+            width: 40px;
+            height: 40px;
+            z-index: 99999999999999999999;
+        }
+        .master-play #currentStart {
+            margin: 0;
+        }
+        .master-play .bar{
+            width: 29%;
+        }
+        .master-play .vol .bi {
+           
+            font-size: 21px;
+            top: -15px;
+            z-index: 9999999999999;
+           
+        }
+        .master-play .vol {
+           
+            width: 70px;
+            z-index: 99999999999;
+          
+        }
+        .master-play span{
+            z-index: 999999999999;
+        }
+    }
+
+    @media screen and (max-width:469px){
+        header .master-play .icons {
+          
+           width: 37%;
+        }
+      
+
+    }
+    @media screen and (max-width:400px){
+        header .song-side nav .search{
+            width: 150px;
+            display: flex;
+            
+        }
+        header .master-play .wave{
+           right: 40%;
+        }
+      
+        header .master-play .icons .shuffle{
+            display: none ;
+        }
+
+        header .master-play .icons{
+           width: 40%;
+        }
+
+        header .menu-side{
+         width: 65%;
+        }
+
+    }
