@@ -25,8 +25,18 @@ header{
     flex-wrap: wrap;
 }
 a:visited{
-color: #fff;
-}
+   color: #fff;
+   }
+   header .menu-side h6{
+      display: none;
+      transform: translateX(-100%);
+   }
+   .menu-side{
+      transform: translateX(0) !important;
+   }
+   
+
+
 .menu-side, .song-side{
     width: 25%;
     height: 90%;
@@ -35,10 +45,7 @@ color: #fff;
     box-shadow: 5px 0px 2px #090f1f;
 }
 /* scroll */
-header .menu-side h6{
-   display: none;
-   transform: translateX(-100%);
-}
+
 .song-side{
     width: 75%;
     background-color: #0b1320;
@@ -52,9 +59,7 @@ header .menu-side h6{
    
      box-shadow: 0px 3px 8px #090f1f;
 }
-.menu-side{
-   transform: translateX(0) !important;
-}
+
 .menu-side h1{
     font-size: 25px;
     margin: 15px 0 0 20px;
