@@ -128,7 +128,7 @@ header .song-side{
             margin-right: 10px;
         }
         header .song-side nav .search{
-            width: auto;
+            width: 250px;
         }
         header .menu-side{
             width: 60%;
@@ -204,6 +204,19 @@ header .song-side{
           
            width: 37%;
         }
+        header .song-side nav .search{
+            width: 210px;
+        }
+        header .song-side .content p {
+            font-size: 10px;
+            
+        }
+        
+    
+    header .song-side .content h1 {
+        font-size: 23px;
+        font-weight: 500;
+    }
       
 
     }
